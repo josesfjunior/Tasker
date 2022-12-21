@@ -1,21 +1,17 @@
 # Tasker
 
-**TODO: Add description**
+## Instalar as dependencias
 
-## Installation
+`mix deps.get`
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `back` to your list of dependencies in `mix.exs`:
+### Criar o banco
+`mix ecto.create`
 
-```elixir
-def deps do
-  [
-    {:back, "~> 0.1.0"}
-  ]
-end
-```
+### Rodar as migrations
+`mix ecto.migrate`
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/back>.
+### voltar uma ou mais migrations
+`mix ecto.rollback (-n (numero de migrations que vc quer voltar))`
 
+## Rodar projeto
+`iex -S mix`
